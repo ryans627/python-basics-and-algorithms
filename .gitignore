@@ -1,26 +1,26 @@
-    # Python compiled files
-    *.pyc
-    __pycache__/
+# Python compiled files
+*.pyc
+__pycache__/
 
-    # Virtual environment
-    venv/
-    .venv/
+# Virtual environment
+venv/
+.venv/
 
-    # IDE-specific files
-    .idea/
-    .vscode/
+# IDE-specific files
+.idea/
+.vscode/
 
-    # macOS specific files
-    .DS_Store
-    ._*
+# macOS specific files
+.DS_Store
+._*
 
-    # Log files
-    *.log
+# Log files
+*.log
 
-    # Environment variables
-    .env
+# Environment variables
+.env
 
-    # Build artifacts
-    dist/
-    build/
-    *.egg-info/
+# Build artifacts
+dist/
+build/
+*.egg-info/
