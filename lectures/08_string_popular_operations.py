@@ -22,6 +22,7 @@ print(str2.find('o'))
 print(str2.index('连')) # 7. 默认是从左往右找
 print(str2.rindex('q')) # 从右往左找到的第一个
 
+print("---" * 100)
 str1 = "qwer一套q连招带走q发q个表情包ctrl+2"
 # 字符串替换方法: replace()
 # 语法格式：字符串.replace('旧元素', '新元素')
@@ -30,6 +31,7 @@ print(str1.replace('r', 'd')) # qwed一套q连招带走q发q个表情包ctdl+2
 str2 = '  daksjk dsa dsd qweqe     qw ss '
 print(str2, len(str2)) # '  daksjk dsa dsd qweqe     qw ss  33'
 print(str2.replace(' ', '')) # 'daksjkdsadsdqweqeqwss'
+print(str2) # "  daksjk dsa dsd qweqe     qw ss " => 字符串操作都是生成新字符串，而不是在原字符串做修改.
 
 # 分割字符串 split
 str1 = 'a,b,c,d,1,2,3,4,5'
