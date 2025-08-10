@@ -19,4 +19,4 @@ new_password = password.replace("6", "7").upper().replace(" ", "")
 
 count = new_password.count("8")
 
-print(f"处理后的密码是{new_password}, 密码中数字8共出现{count}次")
+print(f"处理后的密码是{new_password}, 密码中数字8共出现了{count}次")
