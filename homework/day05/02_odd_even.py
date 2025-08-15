@@ -1,3 +1,8 @@
+"""
+作业：
+创建一个空列表，添加7个1-10的整数
+然后使用for循环遍历列表，统计偶数和奇数的个数并进行输出
+"""
 from random import randint
 
 num_list = []
