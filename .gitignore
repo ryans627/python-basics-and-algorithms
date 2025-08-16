@@ -20,6 +20,9 @@ venv/
 # Environment variables
 .env
 
+# Temporary file
+*.tmp
+
 # Build artifacts
 dist/
 build/
