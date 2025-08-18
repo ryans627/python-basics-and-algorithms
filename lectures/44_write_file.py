@@ -8,7 +8,13 @@
 # file.write('aaaa, \nbbbbbbbb')
 # file.close()
 
-# mode='a', 会追加写入文件内容
-file = open('rap2.txt', mode='a', encoding='utf-8')
-file.write('aaaa, \nbbbbbbbb\n')
-file.close()
+# # mode='a', 会追加写入文件内容
+# file = open('rap2.txt', mode='a', encoding='utf-8')
+# file.write('aaaa, \nbbbbbbbb\n')
+# file.close()
+
+# 使用上下文管理打开文件：
+
+with open('../resources/rap.txt', 'a', encoding='utf-8') as file:
+    # 'a': 追加写入内容
+    file.write('追加我想加入的内容/n冲冲冲！')
