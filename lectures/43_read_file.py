@@ -1,5 +1,20 @@
 # 打开文件
 file = open('../resources/rap.txt', mode='r', encoding='utf-8') # utf-8国际编码
+
+print(file) # <_io.TextIOWrapper name='../resources/rap.txt' mode='r' encoding='utf-8'>
+
+print(file.name) # ../resources/rap.txt
+print(file.mode) # r
+print(file.closed) # False
+print(file.encoding) # utf-8
+
+print("判断是否可以读取", file.readable())
+
+if file.readable():
+    s = file.read()
+
+print("判断是否可以写入", file.writable())
+
 # file打开的文件对象执行对应操作
 # # 1. 一次性读取文件的所有内容：文件对象.read()
 # content = file.read()
