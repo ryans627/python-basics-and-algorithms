@@ -15,7 +15,7 @@ try:
     # 0不能被当作被除数
     print(1 / 0) # 当try中的代码出现异常之后，不会继续执行，而是会直接跳转到except中的代码执行
     print(3)
-except:
+except Exception: # 对所有的异常进行处理
     print(4)
     print("如果程序出现异常，不会报错，会执行except中的代码")
     print(5)
