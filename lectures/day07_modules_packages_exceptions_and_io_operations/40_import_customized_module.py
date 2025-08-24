@@ -1,6 +1,6 @@
 # 导入自定义模块中的函数和变量进行使用
-from lectures.ryans.a import func_a
-from lectures.ryans.b import func_b
+from lectures.day07_modules_packages_exceptions_and_io_operations.ryans.a import func_a
+from lectures.day07_modules_packages_exceptions_and_io_operations.ryans.b import func_b
 # # 方式1: 导入模块
 # import ryans_module
 #
@@ -20,15 +20,16 @@ from lectures.ryans.b import func_b
 # func()
 
 # 从包中导入模块
-from ryans import a, b
+from lectures.day07_modules_packages_exceptions_and_io_operations.ryans import a
+
 print('导入ryans包中a模块中的变量和函数进行使用' + '-' * 100)
 print(a.age)
 func_a()
 
-print('导入ryans包中b模块中的变量和函数进行使用' + '-' * 100)
-print(b.age)
-func_b()
+# print('导入ryans包中b模块中的变量和函数进行使用' + '-' * 100)
+# print(b.age)
+# func_b()
 
 # 方式2: 从包名.模块名 导入 具体的函数或者变量
-from ryans.a import age
+from lectures.day07_modules_packages_exceptions_and_io_operations.ryans.a import age
 print(age)

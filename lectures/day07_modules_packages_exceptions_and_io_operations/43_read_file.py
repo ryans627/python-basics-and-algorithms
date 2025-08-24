@@ -1,5 +1,5 @@
 # 打开文件
-file = open('../resources/rap.txt', mode='r', encoding='utf-8') # utf-8国际编码
+file = open('../../resources/rap.txt', mode='r', encoding='utf-8') # utf-8国际编码
 
 print(file) # <_io.TextIOWrapper name='../resources/rap.txt' mode='r' encoding='utf-8'>
 

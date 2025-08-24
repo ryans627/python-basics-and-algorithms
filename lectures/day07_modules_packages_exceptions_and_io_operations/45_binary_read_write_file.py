@@ -13,7 +13,7 @@
 
 # 结合for循环备份100张图片
 for i in range(1, 101):
-    with open('../resources/liuyifei.jpg', mode='rb') as file_1:
+    with open('../../resources/liuyifei.jpg', mode='rb') as file_1:
         content = file_1.read()
         # 2. 将读取的文件内容写入到新的文件中
         # 当使用绝对路径的时候，如果路径中有特殊字符，那么需要在路径前面加：r, 代表原生字符串

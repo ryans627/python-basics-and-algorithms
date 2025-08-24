@@ -15,6 +15,6 @@
 
 # 使用上下文管理打开文件：
 
-with open('../resources/rap.txt', 'a', encoding='utf-8') as file:
+with open('../../resources/rap.txt', 'a', encoding='utf-8') as file:
     # 'a': 追加写入内容
     file.write('追加我想加入的内容/n冲冲冲！')
