@@ -1,0 +1,24 @@
+# 需求：原有函数功能可以添加商品到购物车，没有进行登录校验，
+# 需要添加一个装饰器来先完成登录再进行添加商品到购物车
+
+# closure 闭包
+# 定义形参 func：接收被装饰函数的名字
+def login(func):
+    def inner():
+        print("进入登录页面")
+        print("输入账号密码，点击登录...")
+        print("校验中...")
+        print("登录成功！")
+        print('-' * 100)
+        func()
+    return inner # 外面函数返回里面函数的引用（名字）
+
+# @login
+def shop():
+    print("进入购物车页面")
+    print("点击添加一条大金链子到购物车")
+    print("添加成功")
+
+
+shop = login(shop)
+shop() # 调用inner函数
