@@ -1,8 +1,8 @@
 # 文件常用操作 导入os模块
 import os
 
-os.rename('../resources', '../resource')
-os.rename('../resource', '../resources')
+os.rename('../../resources', '../resource')
+os.rename('../resource', '../../resources')
 
 # # 1. 重命名 os.rename("原文件名", "新文件名")
 # os.rename('../resources/liuyifei.jpg', '../resources/liuyifei2.jpg')
