@@ -1,8 +1,8 @@
 class Movie:
-    def __init__(self, name, director, time):
-        self.name = name
-        self.director = director
-        self.time = time
+    def __init__(self):
+        self.name = input("请输入电影名称：")
+        self.director = input("请输入电影导演：")
+        self.time = input("请输入电影时长：")
 
     def print_movie_name(self):
         print(f"电影的名称是: {self.name}")
@@ -15,10 +15,7 @@ class Movie:
 
 
 def input_and_output_movie_info():
-    name = input("请输入电影名称：")
-    director = input("请输入电影导演：")
-    time = input("请输入电影时长：")
-    movie = Movie(name, director, time)
+    movie = Movie()
 
     movie.print_movie_name()
     movie.print_director()

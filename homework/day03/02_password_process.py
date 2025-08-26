@@ -8,15 +8,16 @@
 将密码中出现的所有空格进行去除
 统计密码中出现的数字8有几次
 """
-password = input("请输入密码: ")
+while True:
+    password = input("请输入密码: ")
 
-if password.isdigit():
-    print("您的密码由纯数字组成。")
-else:
-    print("您的密码不是全部由数字组成。")
+    if password.isdigit():
+        print("您的密码由纯数字组成。")
+    else:
+        print("您的密码不是全部由数字组成。")
 
-new_password = password.replace("6", "7").upper().replace(" ", "")
+    new_password = password.replace("6", "7").upper().replace(" ", "")
 
-count = new_password.count("8")
+    count = new_password.count("8")
 
-print(f"处理后的密码是{new_password}, 密码中数字8共出现了{count}次")
+    print(f"处理后的密码是{new_password}, 密码中数字8共出现了{count}次")

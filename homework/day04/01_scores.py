@@ -17,11 +17,13 @@ beifan = {
     "跳远": [1.2, 1.3, 1.2]
 }
 
-baili = copy.deepcopy(beifan)
+baili = copy.deepcopy(beifan) # 深拷贝
+# 由于拷贝数据内容有列表数据类型，所以避免数据污染
 baili["语文"] += 20
 baili["跳远"][-1] = 1.5
 
-xingyao = copy.deepcopy(beifan)
+# xingyao = copy.deepcopy(beifan)
+xingyao = copy.copy(beifan) # 浅拷贝
 xingyao["语文"] += 10
 
 print(f"北凡: {beifan}")

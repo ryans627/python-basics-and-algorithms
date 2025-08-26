@@ -6,9 +6,9 @@
 from random import randint
 
 num_list = []
-for i in range(1, 8):
+for i in range(7): # i取值为0-6之间
     num_list.append(randint(1, 10))
-print(f"num_list是: {num_list}")
+print(f"num_list是: {num_list}, 长度为{len(num_list)}")
 
 odd_count = 0
 even_count = 0
