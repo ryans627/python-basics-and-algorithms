@@ -28,4 +28,12 @@ print('---' * 100)
 print(str1[::2])  # qe一连带发表包tl2
 print(str1[1:15:3])  # w一招发情
 # 可以把步长设置为-1: 可以将字符串反转
-print(str1[::-1]) # 2+lrtc包情表个发走带招连套一rewq
+print(str1[::-1])  # 2+lrtc包情表个发走带招连套一rewq
+
+print('-' * 100)
+
+# 语法格式: 字符串[开始索引: 结束索引]
+# 左闭右开区间：包含开始不包含结束索引值
+str1 = "helloWordheima"
+print(str1[1] + str1[0:2] + str1[4:-3])
+# "eheoWordhe"

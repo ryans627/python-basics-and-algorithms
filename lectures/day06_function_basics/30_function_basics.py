@@ -15,18 +15,30 @@ def rap():
     print("333")
     print("444")
 
-while True:
-    day = int(input('今天是多少号？'))
+# while True:
+#     day = int(input('今天是多少号？'))
+#
+#     if day == 1:
+#         rap()
+#     elif day == 15:
+#         rap()
+#     elif day == 30:
+#         rap()
+#     elif day == 0:
+#         print("游戏结束！")
+#         break
+#     else:
+#         print("今天不唱歌，只有初一十五三十开唱")
 
-    if day == 1:
-        rap()
-    elif day == 15:
-        rap()
-    elif day == 30:
-        rap()
-    elif day == 0:
-        print("游戏结束！")
-        break
-    else:
-        print("今天不唱歌，只有初一十五三十开唱")
+
+print('-' * 100)
+
+def func(a, b, c):
+    #    2  4  6
+    #     8         6   10
+    return c + a, a + b, b + c
+
+# 8, 6, 10
+c, b, a = func(2, 4, 6)
+print("a:%d b:%d c:%d" % (a, b, c))
 

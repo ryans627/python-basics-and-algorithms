@@ -37,3 +37,13 @@ print(dict_info) # {'name': '蔡徐坤', 'age': 27, 'job': 'actor', 'hobby': 'ba
 #使用clear方法清空字典
 dict_info.clear()
 print(dict_info) # {}
+
+print('-' * 100)
+
+my_dict = {}
+my_dict[1] = 1
+my_dict['1'] = 2
+my_dict[1.0] = 3 # 1.0和1的哈希值相同
+
+print(my_dict) # {1: 3, '1': 2}
+print(f"{my_dict[1] + my_dict['1'] + my_dict[1.0]}") # 8

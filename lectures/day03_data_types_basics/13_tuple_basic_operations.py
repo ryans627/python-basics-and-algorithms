@@ -12,3 +12,8 @@ print(t1.count('a')) # 3
 
 # 通过元素值获取索引位置
 print(t1.index('b')) # 6
+
+print('-' * 100)
+
+a = ('a', 'b', 10, 30, 'a', 'b', 10, 30)
+print(a.index('b', 2, 6))
